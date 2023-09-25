@@ -18,8 +18,8 @@ services:
       # AUTOPAUSE_TIMEOUT_EST: "30"
       # miecraft server properties
       ALLOW_FLIGHT: "true"
-      OPS: "chieforz"
-      WHITELIST: "chieforz"
+      OPS: "ChiefORZZ"
+      WHITELIST: "ChiefORZZ"
       ENFORCE_WHITELIST: "true"
     volumes:
       - data:/data

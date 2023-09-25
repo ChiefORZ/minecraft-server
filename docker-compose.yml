@@ -13,14 +13,14 @@ services:
       EULA: "TRUE"
       TYPE: FORGE
       CF_SERVER_MOD: /modpacks/Create-Astral-v2.0.5b.zip
-      ENABLE_AUTOPAUSE: "TRUE"
-      AUTOPAUSE_TIMEOUT_INIT: "30"
-      AUTOPAUSE_TIMEOUT_EST: "30"
+      # ENABLE_AUTOPAUSE: "TRUE"
+      # AUTOPAUSE_TIMEOUT_INIT: "30"
+      # AUTOPAUSE_TIMEOUT_EST: "30"
       # miecraft server properties
-      # ALLOW_FLIGHT: "true"
-      # OPS: "chieforz"
-      # WHITELIST: "chieforz"
-      # ENFORCE_WHITELIST: "true"
+      ALLOW_FLIGHT: "true"
+      OPS: "chieforz"
+      WHITELIST: "chieforz"
+      ENFORCE_WHITELIST: "true"
     volumes:
       - data:/data
       - ./modpacks:/modpacks:ro

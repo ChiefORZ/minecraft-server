@@ -8,7 +8,7 @@ services:
     ports:
       - "25565:25565"
     environment:
-      MEMORY: "3G"
+      MEMORY: "2G"
       VERSION: "1.18.2"
       EULA: "TRUE"
       TYPE: FORGE
@@ -16,6 +16,11 @@ services:
       ENABLE_AUTOPAUSE: "TRUE"
       AUTOPAUSE_TIMEOUT_INIT: "30"
       AUTOPAUSE_TIMEOUT_EST: "30"
+      # miecraft server properties
+      ALLOW_FLIGHT: "true"
+      OPS: "chieforz"
+      WHITELIST: "chieforz"
+      ENFORCE_WHITELIST: "true"
     volumes:
       - data:/data
       - ./modpacks:/modpacks:ro

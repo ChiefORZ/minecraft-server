@@ -17,10 +17,10 @@ services:
       AUTOPAUSE_TIMEOUT_INIT: "30"
       AUTOPAUSE_TIMEOUT_EST: "30"
       # miecraft server properties
-      ALLOW_FLIGHT: "true"
-      OPS: "chieforz"
-      WHITELIST: "chieforz"
-      ENFORCE_WHITELIST: "true"
+      # ALLOW_FLIGHT: "true"
+      # OPS: "chieforz"
+      # WHITELIST: "chieforz"
+      # ENFORCE_WHITELIST: "true"
     volumes:
       - data:/data
       - ./modpacks:/modpacks:ro

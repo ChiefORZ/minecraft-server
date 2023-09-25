@@ -11,12 +11,14 @@ services:
       MEMORY: "3G"
       VERSION: "1.18.2"
       EULA: "TRUE"
-      TYPE: "AUTO_CURSEFORGE"
-      CF_API_KEY: "$$2a$$10$$W6kRsnNBSH3kQfwAtOJ8zuoovVSaIJAi4Ra2zOQv0AdkuJBhR7m8i"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/create-astral"
+      TYPE: FORGE
+      CF_SERVER_MOD: /modpacks/Create-Astral-v2.0.5b.zip
       ENABLE_AUTOPAUSE: "TRUE"
       AUTOPAUSE_TIMEOUT_INIT: "30"
       AUTOPAUSE_TIMEOUT_EST: "30"
     volumes:
-      # attach the relative directory 'minecraft-data' to the container's /data path
-      - ~/minecraft-data:/data
+      - data:/data
+      - ./modpacks:/modpacks:ro
+
+volumes:
+  data: {}
